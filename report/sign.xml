@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <template id="report_delivery_document_sign_inherit" inherit_id="stock.report_delivery_document">
+            <!--SIGN and NOTE-->
+            <xpath expr="//div[@name='signature']" position="after">
+                <table class="table table-condensed mt-5">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Goods delivered in good order</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">
+                                Prepared By
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </td>
+                            <td class="text-center">Approved By
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </td>
+                            <td class="text-center">Shipped By
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </td>
+                            <td class="text-center">Received By
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row mt32 mb32">
+                    <div class="col-auto" name="note_kosmos">
+                        <strong>NOTE:</strong>
+                        <p>
+                            1. Lembar 1 dan 3 dikembalikan ke PT Kosmos
+                            <br/>
+                            2. Lembar 2 untuk Customer
+                            <br/>
+                            3. Lembar 4 untuk Pengangkutan
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
