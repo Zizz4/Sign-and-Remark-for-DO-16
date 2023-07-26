@@ -1,4 +1,5 @@
 from odoo import fields, models, api
+from odoo.tools.float_utils import float_compare, float_is_zero, float_round
 
 
 class StockMove(models.Model):
